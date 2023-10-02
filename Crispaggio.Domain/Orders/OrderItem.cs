@@ -1,13 +1,8 @@
-﻿using StronglyTypedIds;
-
-namespace Crispaggio.Domain.Orders;
-
-[StronglyTypedId]
-public partial struct OrderItemId;
+﻿namespace Crispaggio.Domain.Orders;
 
 public sealed class OrderItem
 {
-    public required OrderItemId Id { get; init; }
+    public required Guid Id { get; init; }
     
     public required byte[] Image { get; init; }
     

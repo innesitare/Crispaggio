@@ -12,8 +12,8 @@ public sealed class TopicConfiguration : IEntityTypeConfiguration<Topic>
             .HasKey(t => t.Id);
 
         builder.Property(t => t.Id)
-            .IsRequired()
-            .IsUnicode(false);
+            .IsUnicode(false)
+            .IsRequired();
         
         builder.Property(t => t.Title)
             .IsRequired()

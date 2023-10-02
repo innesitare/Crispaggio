@@ -11,6 +11,10 @@ public sealed class OrderItemConfiguration : IEntityTypeConfiguration<OrderItem>
         builder.ToTable("OrderItems")
             .HasKey(o => o.Id);
 
+        builder.Property(o => o.Id)
+            .IsUnicode(false)
+            .IsRequired();
+        
         builder.Property(o => o.Image)
             .IsUnicode(false)
             .IsRequired();
@@ -26,20 +30,14 @@ public sealed class OrderItemConfiguration : IEntityTypeConfiguration<OrderItem>
             .IsRequired();
 
         builder.Property(o => o.Price)
-            .IsUnicode(false)
-            .IsUnicode();
-        
+            .IsRequired();
+
         builder.Property(o => o.Rating)
-            .IsUnicode(false)
-            .IsUnicode();
+            .IsRequired();
 
         builder
             .HasMany(o => o.Topics)
             .WithOne()
             .OnDelete(DeleteBehavior.Cascade);
-
-        builder.HasIndex(o => o.Id)
-            .IsUnique()
-            .IsDescending(false);
     }
 }

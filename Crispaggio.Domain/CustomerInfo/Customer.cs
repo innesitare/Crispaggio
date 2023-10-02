@@ -1,21 +1,18 @@
 ﻿using Crispaggio.Domain.Orders;
-using Crispaggio.Domain.Party;
-using StronglyTypedIds;
 
 namespace Crispaggio.Domain.CustomerInfo;
 
-[StronglyTypedId]
-public partial struct CustomerId;
-
 public sealed class Customer
 {
-    public required CustomerId Id { get; init; }
+    public required Guid Id { get; init; }
     
-    public required PartyGroupId? PartyGroupId { get; init; }
+    public required Guid? PartyGroupId { get; init; }
     
     public required string Username { get; init; }
     
     public required string Email { get; init; }
+    
+    public required string PhotoUrl { get; init; }
     
     public required int LoyaltyPoints { get; init; }
     

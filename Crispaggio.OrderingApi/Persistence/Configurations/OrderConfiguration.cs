@@ -1,4 +1,5 @@
-﻿using Crispaggio.Domain.Orders;
+﻿using Crispaggio.Domain.CustomerInfo;
+using Crispaggio.Domain.Orders;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -11,22 +12,19 @@ public sealed class OrderConfiguration : IEntityTypeConfiguration<Order>
         builder.ToTable("Orders")
             .HasKey(o => o.Id);
         
+        builder.Property(o => o.Id)
+            .IsRequired()
+            .IsUnicode(false);
+
         builder.Property(o => o.CustomerId)
-            .IsUnicode(false)
-            .IsRequired();
+            .IsRequired()
+            .IsUnicode(false);
 
         builder.Property(o => o.OrderStatus)
-            .IsRequired();
-
-        builder.Property(o => o.DeliveryAddress)
             .IsRequired();
         
         builder.HasMany(x => x.OrderItems)
             .WithOne()
             .OnDelete(DeleteBehavior.Cascade);
-        
-        builder.HasIndex(o => o.Id)
-            .IsUnique()
-            .IsDescending(false);
     }
 }
