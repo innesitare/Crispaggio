@@ -9,11 +9,13 @@ internal sealed class OrderRepository(IOrderingDbContext orderingDbContext) : IO
 {
     public async Task<IEnumerable<Order>> GetAllAsync(CancellationToken cancellationToken)
     {
-        bool isNotEmpty = await orderingDbContext.Orders.AnyAsync(cancellationToken);
-
-        return !isNotEmpty
-            ? Enumerable.Empty<Order>()
-            : orderingDbContext.Orders;
+        bool hasDrones = await orderingDbContext.Orders.AnyAsync(cancellationToken);
+        if (!hasDrones)
+        {
+            return Enumerable.Empty<Order>();
+        }
+        
+        return orderingDbContext.Orders;
     }
 
     public async Task<IEnumerable<Order>> GetAllByCustomerId(Guid customerId, CancellationToken cancellationToken)

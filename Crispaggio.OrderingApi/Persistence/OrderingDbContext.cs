@@ -7,8 +7,10 @@ namespace Crispaggio.OrderingApi.Persistence;
 
 internal sealed class OrderingDbContext : DbContext, IOrderingDbContext
 {
+    public required DbSet<OrderItem> OrderItems { get; init; }
+    
     public required DbSet<Order> Orders { get; init; }
-
+    
     public required DbSet<Customer> Customers { get; init; }
 
     public required DbSet<DeliveryAddress> DeliveryAddresses { get; init; }

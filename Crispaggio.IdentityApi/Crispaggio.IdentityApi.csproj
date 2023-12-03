@@ -13,4 +13,16 @@
       </Content>
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="FirebaseAdmin" Version="2.4.0" />
+      <PackageReference Include="FirebaseAuthentication.net" Version="4.1.0" />
+      <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Crispaggio.Core\Crispaggio.Core.csproj" />
+      <ProjectReference Include="..\Crispaggio.Messages\Crispaggio.Messages.csproj" />
+      <ProjectReference Include="..\Crispaggio.OrderingApi\Crispaggio.OrderingApi.csproj" />
+    </ItemGroup>
+
 </Project>

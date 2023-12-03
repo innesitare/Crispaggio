@@ -16,9 +16,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crispaggio.LoyaltyService",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crispaggio.DeliveryAddressService", "Crispaggio.DeliveryAddressService\Crispaggio.DeliveryAddressService.csproj", "{92264E32-69DA-42F5-8B7C-BA74C91C3309}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crispaggio.OrderItemApi", "Crispaggio.OrderItemApi\Crispaggio.OrderItemApi.csproj", "{C7656267-0F85-4FE2-81E7-6C6A981EE078}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crispaggio.ProductStockApi", "Crispaggio.ProductStockApi\Crispaggio.ProductStockApi.csproj", "{C7656267-0F85-4FE2-81E7-6C6A981EE078}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crispaggio.ApiGateway", "Crispaggio.ApiGateway\Crispaggio.ApiGateway.csproj", "{6BA6E67A-4245-4A55-9514-AE4C68D6470B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crispaggio.Messages", "Crispaggio.Messages\Crispaggio.Messages.csproj", "{F1B3D460-0DCD-4B2A-B410-0A23429E2C57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crispaggio.EmailService", "Crispaggio.EmailService\Crispaggio.EmailService.csproj", "{E1807D6B-0572-4512-AC6A-DC2B38B0482C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -66,5 +70,13 @@ Global
 		{6BA6E67A-4245-4A55-9514-AE4C68D6470B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BA6E67A-4245-4A55-9514-AE4C68D6470B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BA6E67A-4245-4A55-9514-AE4C68D6470B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1B3D460-0DCD-4B2A-B410-0A23429E2C57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1B3D460-0DCD-4B2A-B410-0A23429E2C57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1B3D460-0DCD-4B2A-B410-0A23429E2C57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1B3D460-0DCD-4B2A-B410-0A23429E2C57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1807D6B-0572-4512-AC6A-DC2B38B0482C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1807D6B-0572-4512-AC6A-DC2B38B0482C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1807D6B-0572-4512-AC6A-DC2B38B0482C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1807D6B-0572-4512-AC6A-DC2B38B0482C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

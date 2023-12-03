@@ -1,0 +1,12 @@
+﻿services:
+  cache:
+    image: redis:7.0.9-alpine
+    container_name: redis-cache
+    ports:
+      - 6379:6379
+
+  rabbit-mq:
+    image: rabbitmq:3.12-management-alpine
+    ports: 
+      - 5672:5672
+      - 15672:15672
