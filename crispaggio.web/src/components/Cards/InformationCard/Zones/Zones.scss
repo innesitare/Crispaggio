@@ -1,0 +1,34 @@
+.base-header {
+  font-family: 'Comfortaa', serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.green-zone-header {
+  @extend .base-header;
+  color: #309300;
+}
+
+.yellow-zone-header {
+  @extend .base-header;
+  color: #F7C200;
+}
+
+.blue-zone-header {
+  @extend .base-header;
+  color: #34B4E1;
+}
+
+.zone-paragraph {
+  font-family: 'Comfortaa', serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #5C5C5C;
+}
+
+.zone-details-span {
+  font-family: 'Comfortaa', serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #000000;
+}
