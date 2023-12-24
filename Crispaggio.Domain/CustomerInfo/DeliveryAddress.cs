@@ -1,13 +1,10 @@
-﻿using StronglyTypedIds;
-
-namespace Crispaggio.Domain.CustomerInfo;
-
-[StronglyTypedId(converters: StronglyTypedIdConverter.EfCoreValueConverter)]
-public partial struct DeliveryAddressId { }
+﻿namespace Crispaggio.Domain.CustomerInfo;
 
 public sealed class DeliveryAddress
 {
-    public required DeliveryAddressId Id { get; init; }
+    public required Guid Id { get; init; }
+    
+    public required Guid CustomerId { get; init; }
 
     public required string Postcode { get; init; }
 

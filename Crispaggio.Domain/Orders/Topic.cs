@@ -1,13 +1,8 @@
-﻿using StronglyTypedIds;
-
-namespace Crispaggio.Domain.Orders;
-
-[StronglyTypedId]
-public partial struct TopicId;
+﻿namespace Crispaggio.Domain.Orders;
 
 public sealed class Topic
 {
-    public required TopicId Id { get; init; }
+    public required Guid Id { get; init; }
     
     public required string Title { get; init; }
     

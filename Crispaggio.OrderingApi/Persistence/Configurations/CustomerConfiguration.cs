@@ -1,4 +1,5 @@
 ﻿using Crispaggio.Domain.CustomerInfo;
+using Crispaggio.Domain.Party;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -29,6 +30,10 @@ public sealed class CustomerConfiguration : IEntityTypeConfiguration<Customer>
             .IsUnicode(false)
             .HasMaxLength(50);
 
+        builder.Property(c => c.PhotoUrl)
+            .IsRequired()
+            .IsUnicode(false);
+
         builder.Property(c => c.LoyaltyPoints)
             .IsRequired();
 
@@ -37,7 +42,7 @@ public sealed class CustomerConfiguration : IEntityTypeConfiguration<Customer>
 
         builder.HasMany(c => c.DeliveryAddresses)
             .WithOne()
-            .HasForeignKey("CustomerId")
+            .HasForeignKey(d => d.CustomerId)
             .OnDelete(DeleteBehavior.Cascade);
         
         builder.HasMany(c => c.Orders)

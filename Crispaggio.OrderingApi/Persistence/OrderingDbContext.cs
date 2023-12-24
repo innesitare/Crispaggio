@@ -7,12 +7,17 @@ namespace Crispaggio.OrderingApi.Persistence;
 
 internal sealed class OrderingDbContext : DbContext, IOrderingDbContext
 {
+    public required DbSet<OrderItem> OrderItems { get; init; }
+    
     public required DbSet<Order> Orders { get; init; }
     
     public required DbSet<Customer> Customers { get; init; }
 
-    private OrderingDbContext(DbContextOptions<OrderingDbContext> dbContextOptions) : base(dbContextOptions)
+    public required DbSet<DeliveryAddress> DeliveryAddresses { get; init; }
+    
+    public OrderingDbContext(DbContextOptions<OrderingDbContext> dbContextOptions) : base(dbContextOptions)
     {
+        ChangeTracker.LazyLoadingEnabled = true;
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

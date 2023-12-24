@@ -6,9 +6,13 @@ namespace Crispaggio.OrderingApi.Persistence;
 
 public interface IOrderingDbContext
 {
-    public DbSet<Customer> Customers { get; init; }
+    DbSet<OrderItem> OrderItems { get; init; }
     
-    public DbSet<Order> Orders { get; init; }
+    DbSet<Order> Orders { get; init; }
+    
+    DbSet<Customer> Customers { get; init; }
+    
+    DbSet<DeliveryAddress> DeliveryAddresses { get; init; }
 
     Task<int> SaveChangesAsync(CancellationToken cancellationToken);
 }
