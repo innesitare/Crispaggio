@@ -5,7 +5,7 @@ import SushiIcon from '../../assets/header/sushi-icon.png'
 import SaladsIcon from '../../assets/header/salads-icon.png'
 import DessertsIcon from '../../assets/header/desserts-icon.png'
 import DrinksIcon from '../../assets/header/drinks-icon.png'
-import InformationIcon from '../../assets/header/information-icon.png'
+import DeliveryInformationIcon from '../../assets/header/information-icon.png'
 import LocationIcon from '../../assets/header/location-icon.png'
 import CartIcon from '../../assets/header/cart-icon.png'
 
@@ -54,10 +54,10 @@ export const Header: React.FC = () => {
                     <h6 style={{ color: "#000000" }}>Drinks</h6>
                   </div>
                 </NavLink>
-                <NavLink to="/information">
+                <NavLink to="/delivery">
                   <div className="d-flex align-items-center flex-column link-button-navigate">
-                    <img src={InformationIcon} alt="Menu Icon 5"/>
-                    <h6 style={{ color: "#000000" }}>Information</h6>
+                    <img src={DeliveryInformationIcon} alt="Menu Icon 5"/>
+                    <h6 style={{ color: "#000000" }}>Delivery</h6>
                   </div>
                 </NavLink>
               </div>

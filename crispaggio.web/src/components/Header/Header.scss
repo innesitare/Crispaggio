@@ -3,6 +3,11 @@
   height: 65px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
+  h6 {
+    font-weight: 450;
+    margin-top: 2px;
+  }
+  
   .link {
     height: 48px;
     width: 99px;
@@ -48,6 +53,8 @@
 }
 
 .header-right {
+  padding-top: 5px;
+  
   h6 {
     font-size: 14px;
   }

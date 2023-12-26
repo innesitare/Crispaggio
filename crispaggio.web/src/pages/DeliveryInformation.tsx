@@ -1,13 +1,13 @@
 import React from "react";
 import { Header } from "../components/Header/Header";
 import { Footer } from "../components/Footer/Footer";
-import { OrderComponent } from "../components/Cards/Order/OrderComponent";
+import { DeliveryInformationComponent } from "../components/DeliveryInformation/DeliveryInformationComponent";
 
-export const Checkout = () => {
+export const DeliveryInformation = () => {
   return (
     <>
       <Header/>
-      <OrderComponent/>
+      <DeliveryInformationComponent/>
       <Footer/>
     </>
   );

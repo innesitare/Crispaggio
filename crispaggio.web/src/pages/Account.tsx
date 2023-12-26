@@ -1,13 +1,13 @@
 import React from "react";
 import { Header } from "../components/Header/Header";
 import { Footer } from "../components/Footer/Footer";
-import { AccountCard } from "../components/Cards/AccountCard/AccountCard";
+import { AccountComponent } from "../components/Cards/Account/AccountComponent";
 
 export const Account = () => {
   return (
     <>
       <Header/>
-      <AccountCard/>
+      <AccountComponent/>
       <Footer/>
     </>
   );

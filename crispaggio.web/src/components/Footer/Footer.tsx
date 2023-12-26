@@ -1,5 +1,4 @@
 import React from "react";
-import FacebookIcon from '../../assets/footer/facebook-icon.png';
 import EmailIcon from '../../assets/footer/email-icon.png'
 import InstagramIcon from '../../assets/footer/instagram-icon.png'
 import TelegramIcon from '../../assets/footer/telegram-icon.png'
@@ -15,9 +14,6 @@ export const Footer = () => {
           <div className="row">
             <div className="col-md-6 align-items-center d-flex">
               <div className="d-flex align-items-center">
-                <div className="socialBox mx-2 py-1 px-2">
-                  <img src={FacebookIcon} className="img-fluid" alt=""/>
-                </div>
                 <div className="socials-box mx-2 py-1 px-2">
                   <img src={EmailIcon} className="img-fluid" alt=""/>
                 </div>
