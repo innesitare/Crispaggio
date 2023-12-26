@@ -1,0 +1,22 @@
+.carousel-indicators {
+  position: absolute;
+  bottom: -60px;
+}
+
+.carousel-indicators [data-bs-target] {
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+  background-color: #626262;
+  border-radius: 50%;
+  opacity: 0.1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.carousel-indicators [data-bs-target].active {
+  opacity: 1;
+}
+
+.carousel-indicators .active {
+  background-color: #FFD600;
+}

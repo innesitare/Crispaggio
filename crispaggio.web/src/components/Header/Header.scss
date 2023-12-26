@@ -1,0 +1,150 @@
+.header {
+  background-color: #ffffff;
+  height: 65px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  h6 {
+    font-weight: 450;
+    margin-top: 2px;
+  }
+  
+  .link {
+    height: 48px;
+    width: 99px;
+  }
+
+  .img {
+    height: 35px;
+    width: 35px;
+  }
+
+  .nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .nav-list-item {
+    margin-right: 20px;
+  }
+
+  .hide-text-decoration a { 
+    text-decoration: none;
+  }
+}
+
+.header-left a {
+  padding-inline: 10px;
+  padding-block: 15px;
+  font-size: 14px;
+
+  .icon-anchor {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  &:hover {
+    padding-inline: 10px;
+    padding-block: 15px;
+    font-size: 15px;
+    background-color: #EBEBEB;
+  }
+}
+
+.header-right {
+  padding-top: 5px;
+  
+  h6 {
+    font-size: 14px;
+  }
+}
+
+.link-button-navigate {
+  padding-top: 7px;
+  padding-inline: 20px;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 1px;
+    height: 30px;
+    background-color: #EBEBEB;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 15px);
+  }
+
+  h6 {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+}
+
+.popup-header {
+  font-family: 'Comfortaa', serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0E0E0E;
+  text-align: center;
+
+  .icon-right {
+    margin-left: 8px;
+  }
+
+  .street-input {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background: transparent;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+  }
+
+  .street-input::placeholder {
+    color: #000000 !important;
+    font-size: 14px !important;
+    font-family: 'Comfortaa', serif !important;
+    font-weight: 400 !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .group-input {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    background: transparent;
+    margin-top: 10px;
+    border-radius: 0;
+    font-family: 'Comfortaa', serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+  }
+
+  .confirm-button {
+    color: #0E0E0E;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Comfortaa', serif;
+    width: 164px;
+    height: 52px;
+    border-radius: 22px;
+    background-color: #FFD600;
+    border: 0;
+    margin-top: 5px;
+  }
+}
+
+.sign-in-anchor a {
+  color: black;
+  text-decoration: none;
+
+  h6 {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-top: 15px;
+  }
+}

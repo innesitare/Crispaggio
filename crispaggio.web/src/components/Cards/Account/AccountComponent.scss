@@ -1,0 +1,129 @@
+.account-card-header {
+  font-family: 'Comfortaa', serif;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.account-card-background {
+  background-color: #E8E8E8;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.account-card-background-white {
+  background-color: #FFFFFF;
+}
+
+.accordion-button {
+  font-family: 'Comfortaa', serif;
+  font-weight: 800;
+  padding-left: 15px;
+}
+
+.custom-accordion-body {
+  .row-margin {
+    height: 45px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .row-column-order-id {
+    font-family: 'Comfortaa', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2A2522;
+    position: relative;
+    top: -10px;
+    left: 35px;
+  }
+  
+  .row-column-order-date {
+    font-family: 'Comfortaa', serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666;
+    position: relative;
+    top: -10px;
+  }
+
+  .row-column-order-price {
+    font-family: 'Comfortaa', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2A2522;
+    position: relative;
+    top: -10px;
+  }
+
+  .row-column-order-address {
+    font-family: 'Comfortaa', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2A2522;
+    position: relative;
+    top: -20px;
+  }
+}
+
+.general-actions-header {
+  .logout-button {
+    font-family: 'Comfortaa', serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #0E0E0E;
+    background-color: #FFD600;
+    border: 0;
+    border-radius: 22px;
+    width: 120px;
+    height: 40px;
+  }
+  
+  .delete-account-button-position {
+    display: flex;
+    justify-content: end;
+  }
+  
+  .delete-account-button {
+    font-family: 'Comfortaa', serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    border: 0;
+    border-radius: 22px;
+    height: 40px;
+    width: 480px;
+  }
+}
+
+.form-input {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background: transparent;
+  border-radius: 0;
+  border: 1px solid #E8E8E8;
+  
+  ::placeholder {
+    font-family: 'Comfortaa', serif !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: #000000 !important;
+  }
+}
+
+.general-button {
+  font-family: 'Comfortaa', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0E0E0E;
+  width: 120px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: #FFD600;
+  border: 0;
+  margin-top: 17px;
+}
+
+.general-button-left {
+  margin-left: 10px;
+}

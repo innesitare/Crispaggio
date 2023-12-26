@@ -1,0 +1,36 @@
+.faq-header {
+  font-family: 'Comfortaa', serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+}
+
+.faq-paragraph {
+  font-family: 'Comfortaa', serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #2A2522;
+}
+
+.accordion-item {
+  border-style: none;
+  background-color: transparent;
+}
+
+.accordion-header {
+  background-color: transparent;
+}
+
+.accordion-button {
+  padding-left: 2px;
+  background-color: transparent;
+}
+
+.accordion-body {
+  padding-left: 2px;
+}
+
+.accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+}

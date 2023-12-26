@@ -1,0 +1,74 @@
+.salads-component-header p {
+  font-family: 'Comfortaa', serif;
+  font-weight: 700;
+  font-size: 55px;
+  text-align: center;
+}
+
+.image-section {
+  position: relative;
+}
+
+.discount-section{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.salads-details-weight {
+  p {
+    color: #C80000;
+    font-weight: 700;
+  }
+
+  span {
+    color: black;
+    font-weight: 700;
+  }
+}
+
+.price-section {
+  p {
+    font-weight: 700;
+  }
+
+  span {
+    font-weight: 700;
+    top: -3px;
+    position: relative;
+  }
+}
+
+.salads-details-paragraph {
+  font-size: 14px;
+  color: #6B6B6B;
+}
+
+.salads-details-pricing {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  p {
+    color: #C80000;
+    margin: 0;
+  }
+
+  span {
+    color: black;
+    margin: 0 0 0 5px;
+    font-size: 11px;
+  }
+}
+
+.order-button {
+  background-color: #FFD600;
+  padding-inline: 20px;
+  padding-block: 5px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+}
